@@ -14,9 +14,9 @@ $ vi monitor.list <br />
 /etc/ <br />
 \#/home/ <br />
 ### 3. 執行baseline, 建立基準線
-$ baseline <br />
+$ ./baseline <br />
 ### 4. 執行monitor, 監控程式會產生 checkout.json
-$ monitor <br />
+$ ./monitor <br />
 <br />
 ### checkout.json 格式:
 [ <br />
@@ -24,7 +24,7 @@ $ monitor <br />
 &nbsp;&nbsp;&nbsp;&nbsp;"file": "< file path >" (str) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;"uid": "< uid >" (str) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;"gid": "< gid >" (str) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;"modtime": "< unix time(s)>" (str) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"modtime": "< unix time(s) >" (str) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;"state": "< 0:delete , 1:add , 2:change >" (int) <br />
 &nbsp;&nbsp;}, <br />
 … <br />
