@@ -21,38 +21,38 @@ $ monitor <br />
 ### checkout.json 格式: <br />
 <br />
 [ <br />
-{ <br />
-   "file": "<file path>" (str) <br />
-   "uid": "<uid>" (str) <br />
-   "gid": "<gid>" (str) <br />
-   "modtime": "<unix time(s)>" (str) <br />
-   "state": "< 0:delete , 1:add , 2:change >" (int) <br />
-}, <br />
+&nbsp;&nbsp;{ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"file": "<file path>" (str) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"uid": "<uid>" (str) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"gid": "<gid>" (str) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"modtime": "<unix time(s)>" (str) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"state": "< 0:delete , 1:add , 2:change >" (int) <br />
+&nbsp;&nbsp;}, <br />
 … <br />
 ]<br />
-<br />
+
 ### checkout.json 範例: <br />
 <br />
 [ <br />
-   { <br />
-      "file":"/etc/add 1", <br />
-      "uid":"0", <br />
-      "gid":"0", <br />
-      "modtime":"1592185615", <br />
-      "state":1 <br />
-   }, <br />
-   { <br />
-      "file":"/etc/remove 1", <br />
-      "uid":"0", <br />
-      "gid":"0", <br />
-      "modtime":"1592179200", <br />
-      "state":0 <br />
-   }, <br />
-   { <br />
-      "file":"/etc/change 1", <br />
-      "uid":"0", <br />
-      "gid":"0", <br />
-      "modtime":"1592185671", <br />
-      "state":2 <br />
-   } <br />
+&nbsp;&nbsp;{ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"file":"/etc/add 1", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"uid":"0", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"gid":"0", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"modtime":"1592185615", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"state":1 <br />
+&nbsp;&nbsp;}, <br />
+&nbsp;&nbsp;{ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"file":"/etc/remove 1", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"uid":"0", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"gid":"0", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"modtime":"1592179200", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"state":0 <br />
+&nbsp;&nbsp;}, <br />
+&nbsp;&nbsp;{ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"file":"/etc/change 1", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"uid":"0", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"gid":"0", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"modtime":"1592185671", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;"state":2 <br />
+&nbsp;&nbsp;} <br />
 ] <br />
