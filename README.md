@@ -1,28 +1,24 @@
 # Overview <br />
 ![image](img/overview.JPG?raw=true "Overview") <br />
 <br />
-使用說明 <br />
+## 使用說明 <br />
 
-1. 使用superuser的權限執行install <br />
+### 1. 使用superuser的權限執行install <br />
 $ sudo /bin/bash install <br />
-<br />
-2. 修改監控目錄清單 monitor.list <br />
+### 2. 修改監控目錄清單 monitor.list <br />
 $ vi monitor.list <br />
-<br />
 範例 <br />
 #------------------------ <br />
 #ADD MONITORING DIRECTORY <br />
 #------------------------ <br />
 /etc/ <br />
 #/home/ <br />
-<br />
-3. 執行baseline,建立基準線 <br />
+### 3. 執行baseline,建立基準線 <br />
 $ baseline <br />
-<br />
-4. 執行monitor,監控程式會產生checkout.json <br />
+### 4. 執行monitor,監控程式會產生checkout.json <br />
 $ monitor <br />
 <br />
-checkout.json 格式: <br />
+### checkout.json 格式: <br />
 <br />
 [ <br />
 { <br />
@@ -35,7 +31,7 @@ checkout.json 格式: <br />
 … <br />
 ]<br />
 <br />
-checkout.json 範例: <br />
+### checkout.json 範例: <br />
 <br />
 [ <br />
    { <br />
