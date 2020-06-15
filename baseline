@@ -1,0 +1,41 @@
+#!/bin/bash
+
+function main(){
+
+	execpath=$(dirname $(realpath $0))
+	cd "$execpath/aide"
+
+	if [ "$(stat -c '%a' ./aide)" != "755" ]
+	then
+		echo 'please use "install" command'
+		exit 1
+	fi
+
+	cat > aide.conf <<EOF
+database=file:aide.db
+database_out=file:aide.db
+gzip_dbout=no
+verbose=2
+report_url=file:aide.log
+report_url=stdout
+MONITORING = md5+p+u+g+m
+EOF
+
+	list=$(cat $execpath/monitor.list|grep -E '^/')
+	echo "Monitoring Directory List:"
+	echo "------------------"
+	for i in $list
+	do
+		echo "$i"
+		echo "$i MONITORING">> aide.conf
+	done
+
+	echo "------------------"
+	echo "create baseline..."
+	./aide -c aide.conf --init
+	sleep 10
+	echo "baseline complete"
+	
+}
+
+main

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+function main(){
+
+	if [ "$USER" != "root" ]
+	then
+		echo "please use superuser"
+		exit 1	
+	fi
+
+	execpath=$(dirname $(realpath $0))
+
+	echo "installing..."
+
+	chmod 755 "$execpath/aide/aide"
+	chmod 755 "$execpath/install"
+	chmod 755 "$execpath/baseline"
+	chmod 755 "$execpath/checkout"
+	chmod 755 "$execpath/monitor"
+
+	sleep 10
+	echo "install complete"
+}
+
+main

@@ -1,0 +1,15 @@
+AIDE 0.15.1 found differences between database and filesystem!!
+Start timestamp: 2020-06-04 15:50:15
+
+Summary:
+  Total number of files:	2464
+  Added files:			1
+  Removed files:		0
+  Changed files:		0
+
+
+---------------------------------------------------
+Added files:
+---------------------------------------------------
+
+added: /etc/test
