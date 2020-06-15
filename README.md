@@ -3,9 +3,9 @@
 <br />
 ## 使用說明
 
-### 1. 使用superuser的權限執行install
+### 1. 使用superuser的權限執行 install
 $ sudo /bin/bash install <br />
-### 2. 修改監控目錄清單 monitor.list
+### 2. 修改monitor.list, 監控目錄清單
 $ vi monitor.list <br />
 範例 <br />
 \#------------------------ <br />
@@ -13,9 +13,9 @@ $ vi monitor.list <br />
 \#------------------------ <br />
 /etc/ <br />
 \#/home/ <br />
-### 3. 執行baseline,建立基準線
+### 3. 執行baseline, 建立基準線
 $ baseline <br />
-### 4. 執行monitor,監控程式會產生checkout.json
+### 4. 執行monitor, 監控程式會產生 checkout.json
 $ monitor <br />
 <br />
 ### checkout.json 格式:
