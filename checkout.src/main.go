@@ -90,6 +90,14 @@ func fileExists(f string) bool {
     return !info.IsDir()
 }
 
+func dirExists(f string) bool {
+    info, err := os.Stat(f)
+    if os.IsNotExist(err) {
+        return false
+    }
+    return info.IsDir()
+}
+
 func getExecpath() string {
 	path, _ := filepath.Abs(filepath.Dir(os.Args[0]))
 	//path = "/root/monitor"
@@ -252,6 +260,9 @@ func main() {
 			case "removed:":
 				files = append(files, removed(file[1]))
 			case "changed:":
+				if dirExists(file[1]) {
+					continue
+				}
 				files = append(files, changed(file[1]))
 		}
     }
