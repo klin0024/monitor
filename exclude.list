@@ -1,5 +1,7 @@
 #------------------------
-#ADD MONITORING DIRECTORIES
+#ADD EXCLUDE FILES
 #------------------------
-/var/
+/var/lib
+/var/log
+/var/tmp
 #/home/
