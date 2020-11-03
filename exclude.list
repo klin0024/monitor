@@ -1,7 +1,5 @@
 #------------------------
 #ADD EXCLUDE FILES
 #------------------------
-/var/lib
-/var/log
-/var/tmp
+/tmp/demo
 #/home/

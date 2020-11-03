@@ -3,6 +3,7 @@
 function main(){
 
 	tar -zxvf monitor.tar.gz
+	#tar -zxvf import.tar.gz
 }
 
 main

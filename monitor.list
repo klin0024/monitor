@@ -1,5 +1,5 @@
 #------------------------
 #ADD MONITORING DIRECTORIES
 #------------------------
-/var/
+/tmp/
 #/home/

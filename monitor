@@ -6,6 +6,8 @@ function main(){
 
 	cd $execpath 
 	./checkout > checkout.json
+
+	java -jar target/import-*.jar 
 }
 
 main

@@ -260,7 +260,7 @@ func main() {
 			case "removed:":
 				files = append(files, removed(file[1]))
 			case "changed:":
-				if dirExists(file[1]) {
+				if !fileExists(file[1]) {
 					continue
 				}
 				files = append(files, changed(file[1]))
